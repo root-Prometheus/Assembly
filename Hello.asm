@@ -1,0 +1,17 @@
+org 100h
+
+val SEGMENT .DATA
+    HELLO DB 'Hello, World!', '$'
+val ENDS
+
+HELLO1 PROC NEAR
+     MOV AH, 09H
+     MOV DX, OFFSET HELLO 
+     INT 21H
+     RET
+HELLO1 ENDP
+
+MAIN:
+    CALL HELLO1
+    INT 20H
+    RET 
