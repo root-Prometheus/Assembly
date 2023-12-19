@@ -1,0 +1,7 @@
+MOV AH ,01H
+INT 21H
+
+LEA DL , AL 
+
+MOV AH ,02H
+INT 21H
