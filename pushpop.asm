@@ -1,9 +1,0 @@
-mov sp,0x00EF
-
-push 0x1122
-push 0x3344
-push 0x5566
-
-pop ax
-pop cx
-pop bx
